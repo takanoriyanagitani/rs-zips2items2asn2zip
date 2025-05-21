@@ -1,0 +1,26 @@
+ZipEntry DEFINITIONS ::= BEGIN
+
+	CompressionMethod ::= ENUMERATED {
+		unspecified (0),
+		store (100),
+		deflate (108)
+	}
+
+	Unixtime ::= INTEGER
+
+	ZipMeta ::= SEQUENCE {
+		filename UTF8String,
+		comment UTF8String,
+		modified Unixtime,
+		compression CompressionMethod,
+		isDir BOOLEAN
+	}
+
+	ZipItem ::= SEQUENCE {
+		meta ZipMeta,
+		data OCTET STRING
+	}
+
+	ZipItems ::= SEQUENCE OF ZipItem
+
+END
