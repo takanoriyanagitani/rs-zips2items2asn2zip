@@ -1,0 +1,25 @@
+[package]
+name = "rs-zips2items2asn2zip"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "forbid"
+
+[dependencies.der]
+version = "0.7.10"
+default-features = false
+features = [
+	"derive",
+	"std",
+]
+
+[dependencies.zip]
+version = "3.0.0"
+default-features = false
+features = [
+	"deflate",
+]
