@@ -3,6 +3,11 @@ name = "rs-zips2items2asn2zip"
 version = "0.1.0"
 edition = "2024"
 
+description = "Creates a zip file from zip files using asn.1/der"
+license = "Apache-2.0"
+documentation = "https://docs.rs/crate/rs-zips2items2asn2zip/latest"
+repository = "https://github.com/takanoriyanagitani/rs-zips2items2asn2zip"
+
 [lints.rust]
 unsafe_code = "forbid"
 
